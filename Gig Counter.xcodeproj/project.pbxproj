@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D86CA5AA24ECBECF00BBC005 /* Gig Counter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D86CA5A924ECBECF00BBC005 /* Gig Counter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D86CA5B024ECBECF00BBC005 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86CA5AE24ECBECF00BBC005 /* Interface.storyboard */; };
+		D86CA5B224ECBED200BBC005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86CA5B124ECBED200BBC005 /* Assets.xcassets */; };
+		D86CA5B924ECBED300BBC005 /* Gig Counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D86CA5B824ECBED300BBC005 /* Gig Counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D86CA5BE24ECBED300BBC005 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CA5BD24ECBED300BBC005 /* InterfaceController.swift */; };
+		D86CA5C024ECBED300BBC005 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CA5BF24ECBED300BBC005 /* ExtensionDelegate.swift */; };
+		D86CA5C224ECBED300BBC005 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CA5C124ECBED300BBC005 /* NotificationController.swift */; };
+		D86CA5C424ECBED300BBC005 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CA5C324ECBED300BBC005 /* ComplicationController.swift */; };
+		D86CA5C624ECBED500BBC005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86CA5C524ECBED500BBC005 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D86CA5AB24ECBECF00BBC005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D86CA59F24ECBECE00BBC005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D86CA5A824ECBECF00BBC005;
+			remoteInfo = "Gig Counter WatchKit App";
+		};
+		D86CA5BA24ECBED300BBC005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D86CA59F24ECBECE00BBC005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D86CA5B724ECBED300BBC005;
+			remoteInfo = "Gig Counter WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D86CA5CE24ECBED500BBC005 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D86CA5B924ECBED300BBC005 /* Gig Counter WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86CA5D224ECBED500BBC005 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D86CA5AA24ECBECF00BBC005 /* Gig Counter WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D86CA5A524ECBECE00BBC005 /* Gig Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gig Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86CA5A924ECBECF00BBC005 /* Gig Counter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gig Counter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86CA5AF24ECBECF00BBC005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D86CA5B124ECBED200BBC005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D86CA5B324ECBED200BBC005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D86CA5B824ECBED300BBC005 /* Gig Counter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Gig Counter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86CA5BD24ECBED300BBC005 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D86CA5BF24ECBED300BBC005 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D86CA5C124ECBED300BBC005 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D86CA5C324ECBED300BBC005 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D86CA5C524ECBED500BBC005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D86CA5C724ECBED500BBC005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D86CA5C824ECBED500BBC005 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D86CA5B524ECBED300BBC005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D86CA59E24ECBECE00BBC005 = {
+			isa = PBXGroup;
+			children = (
+				D86CA5AD24ECBECF00BBC005 /* Gig Counter WatchKit App */,
+				D86CA5BC24ECBED300BBC005 /* Gig Counter WatchKit Extension */,
+				D86CA5A624ECBECE00BBC005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D86CA5A624ECBECE00BBC005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D86CA5A524ECBECE00BBC005 /* Gig Counter.app */,
+				D86CA5A924ECBECF00BBC005 /* Gig Counter WatchKit App.app */,
+				D86CA5B824ECBED300BBC005 /* Gig Counter WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D86CA5AD24ECBECF00BBC005 /* Gig Counter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D86CA5AE24ECBECF00BBC005 /* Interface.storyboard */,
+				D86CA5B124ECBED200BBC005 /* Assets.xcassets */,
+				D86CA5B324ECBED200BBC005 /* Info.plist */,
+			);
+			path = "Gig Counter WatchKit App";
+			sourceTree = "<group>";
+		};
+		D86CA5BC24ECBED300BBC005 /* Gig Counter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D86CA5BD24ECBED300BBC005 /* InterfaceController.swift */,
+				D86CA5BF24ECBED300BBC005 /* ExtensionDelegate.swift */,
+				D86CA5C124ECBED300BBC005 /* NotificationController.swift */,
+				D86CA5C324ECBED300BBC005 /* ComplicationController.swift */,
+				D86CA5C524ECBED500BBC005 /* Assets.xcassets */,
+				D86CA5C724ECBED500BBC005 /* Info.plist */,
+				D86CA5C824ECBED500BBC005 /* PushNotificationPayload.apns */,
+			);
+			path = "Gig Counter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D86CA5A424ECBECE00BBC005 /* Gig Counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D86CA5D324ECBED500BBC005 /* Build configuration list for PBXNativeTarget "Gig Counter" */;
+			buildPhases = (
+				D86CA5A324ECBECE00BBC005 /* Resources */,
+				D86CA5D224ECBED500BBC005 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D86CA5AC24ECBECF00BBC005 /* PBXTargetDependency */,
+			);
+			name = "Gig Counter";
+			productName = "Gig Counter";
+			productReference = D86CA5A524ECBECE00BBC005 /* Gig Counter.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		D86CA5A824ECBECF00BBC005 /* Gig Counter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D86CA5CF24ECBED500BBC005 /* Build configuration list for PBXNativeTarget "Gig Counter WatchKit App" */;
+			buildPhases = (
+				D86CA5A724ECBECF00BBC005 /* Resources */,
+				D86CA5CE24ECBED500BBC005 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D86CA5BB24ECBED300BBC005 /* PBXTargetDependency */,
+			);
+			name = "Gig Counter WatchKit App";
+			productName = "Gig Counter WatchKit App";
+			productReference = D86CA5A924ECBECF00BBC005 /* Gig Counter WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D86CA5B724ECBED300BBC005 /* Gig Counter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D86CA5CB24ECBED500BBC005 /* Build configuration list for PBXNativeTarget "Gig Counter WatchKit Extension" */;
+			buildPhases = (
+				D86CA5B424ECBED300BBC005 /* Sources */,
+				D86CA5B524ECBED300BBC005 /* Frameworks */,
+				D86CA5B624ECBED300BBC005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gig Counter WatchKit Extension";
+			productName = "Gig Counter WatchKit Extension";
+			productReference = D86CA5B824ECBED300BBC005 /* Gig Counter WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D86CA59F24ECBECE00BBC005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Joe's Studio";
+				TargetAttributes = {
+					D86CA5A424ECBECE00BBC005 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					D86CA5A824ECBECF00BBC005 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					D86CA5B724ECBED300BBC005 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = D86CA5A224ECBECE00BBC005 /* Build configuration list for PBXProject "Gig Counter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D86CA59E24ECBECE00BBC005;
+			productRefGroup = D86CA5A624ECBECE00BBC005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D86CA5A424ECBECE00BBC005 /* Gig Counter */,
+				D86CA5A824ECBECF00BBC005 /* Gig Counter WatchKit App */,
+				D86CA5B724ECBED300BBC005 /* Gig Counter WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D86CA5A324ECBECE00BBC005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86CA5A724ECBECF00BBC005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86CA5B224ECBED200BBC005 /* Assets.xcassets in Resources */,
+				D86CA5B024ECBECF00BBC005 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86CA5B624ECBED300BBC005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86CA5C624ECBED500BBC005 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D86CA5B424ECBED300BBC005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86CA5C224ECBED300BBC005 /* NotificationController.swift in Sources */,
+				D86CA5C424ECBED300BBC005 /* ComplicationController.swift in Sources */,
+				D86CA5C024ECBED300BBC005 /* ExtensionDelegate.swift in Sources */,
+				D86CA5BE24ECBED300BBC005 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D86CA5AC24ECBECF00BBC005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D86CA5A824ECBECF00BBC005 /* Gig Counter WatchKit App */;
+			targetProxy = D86CA5AB24ECBECF00BBC005 /* PBXContainerItemProxy */;
+		};
+		D86CA5BB24ECBED300BBC005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D86CA5B724ECBED300BBC005 /* Gig Counter WatchKit Extension */;
+			targetProxy = D86CA5BA24ECBED300BBC005 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D86CA5AE24ECBECF00BBC005 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D86CA5AF24ECBECF00BBC005 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D86CA5C924ECBED500BBC005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D86CA5CA24ECBED500BBC005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D86CA5CC24ECBED500BBC005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PNS76KB97;
+				INFOPLIST_FILE = "Gig Counter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "joes.studio.Gig-Counter.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		D86CA5CD24ECBED500BBC005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PNS76KB97;
+				INFOPLIST_FILE = "Gig Counter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "joes.studio.Gig-Counter.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		D86CA5D024ECBED500BBC005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PNS76KB97;
+				IBSC_MODULE = Gig_Counter_WatchKit_Extension;
+				INFOPLIST_FILE = "Gig Counter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "joes.studio.Gig-Counter.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		D86CA5D124ECBED500BBC005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PNS76KB97;
+				IBSC_MODULE = Gig_Counter_WatchKit_Extension;
+				INFOPLIST_FILE = "Gig Counter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "joes.studio.Gig-Counter.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		D86CA5D424ECBED500BBC005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9PNS76KB97;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "joes.studio.Gig-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D86CA5D524ECBED500BBC005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9PNS76KB97;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "joes.studio.Gig-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D86CA5A224ECBECE00BBC005 /* Build configuration list for PBXProject "Gig Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86CA5C924ECBED500BBC005 /* Debug */,
+				D86CA5CA24ECBED500BBC005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D86CA5CB24ECBED500BBC005 /* Build configuration list for PBXNativeTarget "Gig Counter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86CA5CC24ECBED500BBC005 /* Debug */,
+				D86CA5CD24ECBED500BBC005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D86CA5CF24ECBED500BBC005 /* Build configuration list for PBXNativeTarget "Gig Counter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86CA5D024ECBED500BBC005 /* Debug */,
+				D86CA5D124ECBED500BBC005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D86CA5D324ECBED500BBC005 /* Build configuration list for PBXNativeTarget "Gig Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86CA5D424ECBED500BBC005 /* Debug */,
+				D86CA5D524ECBED500BBC005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D86CA59F24ECBECE00BBC005 /* Project object */;
+}
