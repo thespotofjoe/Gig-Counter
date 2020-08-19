@@ -11,11 +11,13 @@
 		D86CA5B024ECBECF00BBC005 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86CA5AE24ECBECF00BBC005 /* Interface.storyboard */; };
 		D86CA5B224ECBED200BBC005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86CA5B124ECBED200BBC005 /* Assets.xcassets */; };
 		D86CA5B924ECBED300BBC005 /* Gig Counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D86CA5B824ECBED300BBC005 /* Gig Counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D86CA5BE24ECBED300BBC005 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CA5BD24ECBED300BBC005 /* InterfaceController.swift */; };
 		D86CA5C024ECBED300BBC005 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CA5BF24ECBED300BBC005 /* ExtensionDelegate.swift */; };
 		D86CA5C224ECBED300BBC005 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CA5C124ECBED300BBC005 /* NotificationController.swift */; };
 		D86CA5C424ECBED300BBC005 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CA5C324ECBED300BBC005 /* ComplicationController.swift */; };
 		D86CA5C624ECBED500BBC005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86CA5C524ECBED500BBC005 /* Assets.xcassets */; };
+		D86CA5D924ED602F00BBC005 /* CurrentEarningsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CA5D824ED602F00BBC005 /* CurrentEarningsController.swift */; };
+		D86CA5DB24ED60BC00BBC005 /* EarningsLeftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CA5DA24ED60BC00BBC005 /* EarningsLeftController.swift */; };
+		D86CA5DD24ED60FB00BBC005 /* SetGoalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CA5DC24ED60FB00BBC005 /* SetGoalController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,13 +69,15 @@
 		D86CA5B124ECBED200BBC005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D86CA5B324ECBED200BBC005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D86CA5B824ECBED300BBC005 /* Gig Counter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Gig Counter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D86CA5BD24ECBED300BBC005 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		D86CA5BF24ECBED300BBC005 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		D86CA5C124ECBED300BBC005 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		D86CA5C324ECBED300BBC005 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		D86CA5C524ECBED500BBC005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D86CA5C724ECBED500BBC005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D86CA5C824ECBED500BBC005 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D86CA5D824ED602F00BBC005 /* CurrentEarningsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentEarningsController.swift; sourceTree = "<group>"; };
+		D86CA5DA24ED60BC00BBC005 /* EarningsLeftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningsLeftController.swift; sourceTree = "<group>"; };
+		D86CA5DC24ED60FB00BBC005 /* SetGoalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,9 @@
 		D86CA5BC24ECBED300BBC005 /* Gig Counter WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D86CA5BD24ECBED300BBC005 /* InterfaceController.swift */,
+				D86CA5DC24ED60FB00BBC005 /* SetGoalController.swift */,
+				D86CA5DA24ED60BC00BBC005 /* EarningsLeftController.swift */,
+				D86CA5D824ED602F00BBC005 /* CurrentEarningsController.swift */,
 				D86CA5BF24ECBED300BBC005 /* ExtensionDelegate.swift */,
 				D86CA5C124ECBED300BBC005 /* NotificationController.swift */,
 				D86CA5C324ECBED300BBC005 /* ComplicationController.swift */,
@@ -257,10 +263,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86CA5D924ED602F00BBC005 /* CurrentEarningsController.swift in Sources */,
 				D86CA5C224ECBED300BBC005 /* NotificationController.swift in Sources */,
+				D86CA5DD24ED60FB00BBC005 /* SetGoalController.swift in Sources */,
 				D86CA5C424ECBED300BBC005 /* ComplicationController.swift in Sources */,
 				D86CA5C024ECBED300BBC005 /* ExtensionDelegate.swift in Sources */,
-				D86CA5BE24ECBED300BBC005 /* InterfaceController.swift in Sources */,
+				D86CA5DB24ED60BC00BBC005 /* EarningsLeftController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
