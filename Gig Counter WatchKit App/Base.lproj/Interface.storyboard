@@ -1,16 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Gig_Counter_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" alignment="left" text="Today's Goal:" textAlignment="center" id="gDk-sj-AXF"/>
+                        <label width="1" height="30" alignment="center" text="$100" textAlignment="center" id="pim-h4-xwC">
+                            <fontDescription key="font" type="system" pointSize="25"/>
+                        </label>
+                        <group width="1" alignment="left" id="a31-Fw-DSI">
+                            <items>
+                                <button width="0.5" height="20" alignment="center" title="+$10" id="AVC-DW-EL3">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </button>
+                                <button width="0.5" height="20" alignment="center" title="-$10" id="Jfy-us-Bzm">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Z0w-EL-2yh">
+                            <items>
+                                <button width="0.5" height="20" alignment="left" title="+$5" id="rF9-FN-7cj">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </button>
+                                <button width="0.5" height="20" alignment="left" title="-$5" id="gLT-KO-QK4">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Pm8-3y-Rv6">
+                            <items>
+                                <button width="0.5" height="20" alignment="left" title="+$1" id="guQ-Qv-6ix">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </button>
+                                <button width="0.5" height="20" alignment="left" title="-$1" id="wVG-Es-HG0">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="74i-kr-ipk" kind="relationship" relationship="nextPage" id="OdL-Xh-HZW"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="6" y="85"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="A2W-Tb-zlT">
+            <objects>
+                <controller id="74i-kr-ipk">
+                    <items>
+                        <label width="136" alignment="left" text="Today's Earnings:" textAlignment="center" id="II2-bT-nTW">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label width="136" alignment="left" text="$0" textAlignment="center" id="LvI-8K-WkF">
+                            <fontDescription key="font" type="system" pointSize="25"/>
+                        </label>
+                        <group width="1" alignment="left" id="Fe6-VB-EoJ">
+                            <items>
+                                <button width="0.5" height="20" alignment="center" title="+$10" id="ntz-EE-68K">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </button>
+                                <button width="0.5" height="20" alignment="center" title="-$10" id="cNB-Zy-gbv">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="7JQ-s1-AhU">
+                            <items>
+                                <button width="0.5" height="20" alignment="left" title="+$5" id="Vfs-BR-MBB">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </button>
+                                <button width="0.5" height="20" alignment="left" title="-$5" id="ldk-dh-H2m">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="AIc-cK-ats">
+                            <items>
+                                <button width="0.5" height="20" alignment="left" title="+$1" id="y6O-eL-Qzi">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </button>
+                                <button width="0.5" height="20" alignment="left" title="-$1" id="AT0-qW-U9j">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="N2N-lH-EyF" kind="relationship" relationship="nextPage" id="P1g-Ko-GIV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="251" y="85"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="qMF-Ki-MLY">
+            <objects>
+                <controller id="N2N-lH-EyF">
+                    <items>
+                        <label width="136" alignment="left" text="$$$ left:" textAlignment="center" id="E3k-Zu-WTN">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label width="136" alignment="left" text="$100" textAlignment="center" id="leY-0r-5gB">
+                            <fontDescription key="font" type="system" pointSize="40"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="502" y="85"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -32,14 +154,14 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Gig_Counter_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Gig_Counter_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
