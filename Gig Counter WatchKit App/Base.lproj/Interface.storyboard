@@ -20,11 +20,18 @@
                                 <button width="0.5" height="20" alignment="center" title="+$10" id="AVC-DW-EL3">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="plus10Pressed" destination="AgC-eL-Hgc" id="3wi-Aa-sqg"/>
+                                    </connections>
                                 </button>
                                 <button width="0.5" height="20" alignment="center" title="-$10" id="Jfy-us-Bzm">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="minus10Pressed" destination="AgC-eL-Hgc" id="OKv-fq-Yzc"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -33,11 +40,18 @@
                                 <button width="0.5" height="20" alignment="left" title="+$5" id="rF9-FN-7cj">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="plus5Pressed" destination="AgC-eL-Hgc" id="kR1-62-LUO"/>
+                                    </connections>
                                 </button>
                                 <button width="0.5" height="20" alignment="left" title="-$5" id="gLT-KO-QK4">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="minus5Pressed" destination="AgC-eL-Hgc" id="Aa5-Or-BU5"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -46,15 +60,24 @@
                                 <button width="0.5" height="20" alignment="left" title="+$1" id="guQ-Qv-6ix">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="plus1Pressed" destination="AgC-eL-Hgc" id="AxS-0r-8we"/>
+                                    </connections>
                                 </button>
                                 <button width="0.5" height="20" alignment="left" title="-$1" id="wVG-Es-HG0">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="minus1Pressed" destination="AgC-eL-Hgc" id="nQt-Au-cfb"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
                     </items>
                     <connections>
+                        <outlet property="goalLabel" destination="pim-h4-xwC" id="HHF-us-IIw"/>
                         <segue destination="74i-kr-ipk" kind="relationship" relationship="nextPage" id="OdL-Xh-HZW"/>
                     </connections>
                 </controller>
@@ -77,11 +100,18 @@
                                 <button width="0.5" height="20" alignment="center" title="+$10" id="ntz-EE-68K">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="plus10Pressed" destination="74i-kr-ipk" id="ACO-gN-3ZB"/>
+                                    </connections>
                                 </button>
                                 <button width="0.5" height="20" alignment="center" title="-$10" id="cNB-Zy-gbv">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="minus10Pressed" destination="74i-kr-ipk" id="tSP-XR-Mx7"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -90,11 +120,18 @@
                                 <button width="0.5" height="20" alignment="left" title="+$5" id="Vfs-BR-MBB">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="plus5Pressed" destination="74i-kr-ipk" id="rPG-7q-N42"/>
+                                    </connections>
                                 </button>
                                 <button width="0.5" height="20" alignment="left" title="-$5" id="ldk-dh-H2m">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="minus5Pressed" destination="74i-kr-ipk" id="Tax-9Z-A1P"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -103,15 +140,22 @@
                                 <button width="0.5" height="20" alignment="left" title="+$1" id="y6O-eL-Qzi">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="plus1Pressed" destination="74i-kr-ipk" id="AFB-3r-90f"/>
+                                    </connections>
                                 </button>
                                 <button width="0.5" height="20" alignment="left" title="-$1" id="AT0-qW-U9j">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="minus1Pressed" destination="74i-kr-ipk" id="Lsz-Pj-1zl"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
                     </items>
                     <connections>
+                        <outlet property="currentEarningsLabel" destination="LvI-8K-WkF" id="Vsy-nk-4eV"/>
                         <segue destination="N2N-lH-EyF" kind="relationship" relationship="nextPage" id="P1g-Ko-GIV"/>
                     </connections>
                 </controller>
@@ -130,6 +174,9 @@
                             <fontDescription key="font" type="system" pointSize="40"/>
                         </label>
                     </items>
+                    <connections>
+                        <outlet property="earningsLeftLabel" destination="leY-0r-5gB" id="e4m-Aj-Gbh"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="501.86956521739125" y="85"/>

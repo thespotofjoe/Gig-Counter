@@ -11,6 +11,8 @@ import Foundation
 
 class CurrentEarningsController: WKInterfaceController {
 
+    @IBOutlet weak var currentEarningsLabel: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -20,6 +22,24 @@ class CurrentEarningsController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+    }
+    
+    @IBAction func plus10Pressed() {
+    }
+    
+    @IBAction func minus10Pressed() {
+    }
+    
+    @IBAction func plus5Pressed() {
+    }
+    
+    @IBAction func minus5Pressed() {
+    }
+    
+    @IBAction func plus1Pressed() {
+    }
+    
+    @IBAction func minus1Pressed() {
     }
     
     override func didDeactivate() {

@@ -11,6 +11,8 @@ import Foundation
 
 class SetGoalController: WKInterfaceController {
 
+    @IBOutlet weak var goalLabel: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -22,9 +24,29 @@ class SetGoalController: WKInterfaceController {
         super.willActivate()
     }
     
+    @IBAction func plus10Pressed() {
+    }
+    
+    @IBAction func minus10Pressed() {
+    }
+    
+    @IBAction func plus5Pressed() {
+    }
+    
+    @IBAction func minus5Pressed() {
+    }
+    
+    @IBAction func plus1Pressed() {
+    }
+    
+    @IBAction func minus1Pressed() {
+    }
+    
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
+    
 
 }
