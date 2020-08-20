@@ -22,10 +22,19 @@ class EarningsLeftController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Unpack the dictionary passed from previous interface controller.
-        self.data = context as! [String : Int]
-        self.goal = data["goal"]!
-        self.current = data["current"]!
+        // Unpack the dictionary passed from previous interface controller,
+        // but if this is the beginning of the program, do nothing.
+        if let dataAsAny = context
+        {
+            self.data = dataAsAny as! [String : Int]
+            self.goal = data["goal"]!
+            self.current = data["current"]!
+        }
+    }
+    
+    override func willActivate() {
+        // This method is called when watch view controller is about to be visible to user
+        super.willActivate()
         
         // Set the label to reflect the earnings left for the day
         let earningsLeft = goal - current
@@ -37,18 +46,7 @@ class EarningsLeftController: WKInterfaceController {
         } else {
             earningsLeftLabel.setText("$\(earningsLeft)")
         }
-        
-    }
-    
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-    
-    override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
-        // Return data to be accessed in CurrentEarningsController
-        return self.data as Any?
-    }
+    }x
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible

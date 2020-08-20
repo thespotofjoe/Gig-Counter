@@ -28,32 +28,34 @@ class CurrentEarningsController: WKInterfaceController {
         // Make sure 0 is the lowest it can be
         if (current < 0) { current = 0 }
         
-        // Update the label to reflect the change
-        currentEarningsLabel.setText("$\(self.current)")
+        // Update dictionary to reflect the change
+        self.data["goal"] = goal
+        self.data["current"] = current
+        
+        // Reload interfaces to update data throughout the app
+        WKInterfaceController.reloadRootPageControllers(withNames : ["SetGoalController", "CurrentEarningsController", "EarningsLeftController"], contexts : [data, data, data], orientation : WKPageOrientation.horizontal, pageIndex: 1)
     }
     
     /* Integral system functions, overridden */
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Unpack the dictionary passed from previous interface controller.
-        self.data = context as! [String : Int]
-        self.goal = data["goal"]!
-        self.current = data["current"]!
+        // Unpack the dictionary passed from previous interface controller,
+        // but if this is the beginning of the program, do nothing.
+        if let dataAsAny = context
+        {
+            self.data = dataAsAny as! [String : Int]
+            self.goal = data["goal"]!
+            self.current = data["current"]!
+            
+            // Update the label to reflect the data passed
+            currentEarningsLabel.setText("$\(self.current)")
+        }
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-    }
-    
-    override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
-        // Update dictionary to reflect newest values
-        self.data["goal"] = goal
-        self.data["current"] = current
-        
-        // Return data to be accessed in either EarningsLeftController or SetGoalController
-        return self.data as Any?
     }
     
     override func didDeactivate() {

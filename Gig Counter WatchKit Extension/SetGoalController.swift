@@ -28,8 +28,12 @@ class SetGoalController: WKInterfaceController {
         // Make sure 0 is the lowest it can be
         if (goal < 0) { goal = 0 }
         
-        // Update the label to reflect the change
-        goalLabel.setText("$\(self.goal)")
+        // Update dictionary to reflect the change
+        self.data["goal"] = goal
+        self.data["current"] = current
+        
+        // Reload interfaces to update data throughout the app
+        WKInterfaceController.reloadRootPageControllers(withNames : ["SetGoalController", "CurrentEarningsController", "EarningsLeftController"], contexts : [data, data, data], orientation : WKPageOrientation.horizontal, pageIndex: 0)
     }
     
     /* Integral system functions, overridden */
@@ -44,6 +48,9 @@ class SetGoalController: WKInterfaceController {
             self.data = dataAsAny as! [String : Int]
             self.goal = data["goal"]!
             self.current = data["current"]!
+            
+            // Update the label to reflect the data
+            goalLabel.setText("$\(self.goal)")
         }
     }
     
@@ -51,16 +58,6 @@ class SetGoalController: WKInterfaceController {
     {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-    }
-    
-    override func contextForSegue(withIdentifier segueIdentifier: String) -> Any?
-    {
-        // Update dictionary to reflect latest values
-        self.data["goal"] = goal
-        self.data["current"] = current
-        
-        // Return data to be accessed in EarningsLeftController
-        return self.data as Any?
     }
     
     override func didDeactivate()

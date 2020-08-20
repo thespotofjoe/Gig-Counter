@@ -6,10 +6,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
-        <!--Set Goal Controller-->
+        <!--SetGoalController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="SetGoalController" customModule="Gig_Counter_WatchKit_App" customModuleProvider="target">
+                <controller identifier="SetGoalController" id="AgC-eL-Hgc" customClass="SetGoalController" customModule="Gig_Counter_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label width="1" alignment="left" text="Today's Goal:" textAlignment="center" id="gDk-sj-AXF"/>
                         <label width="1" height="30" alignment="center" text="$100" textAlignment="center" id="pim-h4-xwC">
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="6" y="85"/>
         </scene>
-        <!--Current Earnings Controller-->
+        <!--CurrentEarningsController-->
         <scene sceneID="A2W-Tb-zlT">
             <objects>
-                <controller id="74i-kr-ipk" customClass="CurrentEarningsController" customModule="Gig_Counter_WatchKit_App" customModuleProvider="target">
+                <controller identifier="CurrentEarningsController" id="74i-kr-ipk" customClass="CurrentEarningsController" customModule="Gig_Counter_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label width="1" alignment="left" text="Today's Earnings:" textAlignment="center" id="II2-bT-nTW">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
@@ -162,10 +162,10 @@
             </objects>
             <point key="canvasLocation" x="251" y="85"/>
         </scene>
-        <!--Earnings Left Controller-->
+        <!--EarningsLeftController-->
         <scene sceneID="qMF-Ki-MLY">
             <objects>
-                <controller id="N2N-lH-EyF" customClass="EarningsLeftController" customModule="Gig_Counter_WatchKit_App" customModuleProvider="target">
+                <controller identifier="EarningsLeftController" id="N2N-lH-EyF" customClass="EarningsLeftController" customModule="Gig_Counter_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label width="1" height="23" alignment="left" verticalAlignment="center" text="$$$ left:" textAlignment="center" id="E3k-Zu-WTN">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
