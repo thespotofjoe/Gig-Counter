@@ -173,6 +173,14 @@
                         <label width="1" alignment="left" verticalAlignment="center" text="$100" textAlignment="center" id="leY-0r-5gB">
                             <fontDescription key="font" type="system" pointSize="40"/>
                         </label>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Reset" id="BIq-to-Wn1">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                            <connections>
+                                <action selector="resetPressed" destination="N2N-lH-EyF" id="KGf-Rj-LrF"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="earningsLeftLabel" destination="leY-0r-5gB" id="e4m-Aj-Gbh"/>

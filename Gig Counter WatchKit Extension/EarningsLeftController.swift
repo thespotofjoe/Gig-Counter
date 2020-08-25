@@ -52,5 +52,27 @@ class EarningsLeftController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
+    /* Button press Actions */
+    // Reset button pressed, do things
+    @IBAction func resetPressed()
+    {
+        // Define actions for the alert
+        let resetAction = WKAlertAction(title: "Reset", style: .destructive, handler:
+        {
+            // Reset data
+            self.data["goal"] = 100
+            self.data["current"] = 0
+            
+            // Reload interfaces to update data throughout the app
+            WKInterfaceController.reloadRootPageControllers(withNames : ["SetGoalController", "CurrentEarningsController", "EarningsLeftController"], contexts : [self.data, self.data, self.data], orientation : WKPageOrientation.horizontal, pageIndex: 2)
+        })
+        
+        let cancelAction = WKAlertAction(title: "Cancel", style: .cancel, handler: {})
+        
+        // Show alert so user confirms they want to lose all data and reset to default
+        self.presentAlert(withTitle: "Are you sure?", message: "This will delete your current goal and earnings.", preferredStyle: .sideBySideButtonsAlert, actions: [resetAction, cancelAction])
+    }
+    
 
 }
