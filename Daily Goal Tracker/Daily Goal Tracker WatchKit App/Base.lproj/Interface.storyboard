@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--SetGoalController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="SetGoalController" id="AgC-eL-Hgc" customClass="SetGoalController" customModule="Daily_Goal_Tracker_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Set Goal" id="NpK-ie-htL"/>
+                        <label alignment="center" verticalAlignment="center" text="$100" id="5hl-gn-JBm">
+                            <fontDescription key="font" type="system" pointSize="30"/>
+                        </label>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="sY8-wL-xB1">
+                            <items>
+                                <button width="0.5" height="25" alignment="center" verticalAlignment="bottom" title="+$10" id="eW1-8v-cX6">
+                                    <connections>
+                                        <action selector="plus10Pressed" destination="AgC-eL-Hgc" id="UlH-of-doS"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="25" alignment="center" verticalAlignment="bottom" title="-$10" id="8N8-1T-95m">
+                                    <connections>
+                                        <action selector="minus10Pressed" destination="AgC-eL-Hgc" id="nFy-Gh-4iz"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="Hgm-cf-flw">
+                            <items>
+                                <button width="0.5" height="25" alignment="center" verticalAlignment="bottom" title="+$5" id="CCr-iX-kdi">
+                                    <connections>
+                                        <action selector="plus5Pressed" destination="AgC-eL-Hgc" id="AIP-Pj-gCN"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="25" alignment="center" verticalAlignment="bottom" title="-$5" id="15M-89-Yhk">
+                                    <connections>
+                                        <action selector="minus5Pressed" destination="AgC-eL-Hgc" id="tnZ-YB-Abk"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="Zcq-T1-H7E">
+                            <items>
+                                <button width="0.5" height="25" alignment="center" verticalAlignment="bottom" title="+$1" id="aqm-y4-DNX">
+                                    <connections>
+                                        <action selector="plus1Pressed" destination="AgC-eL-Hgc" id="smI-wi-g4f"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="25" alignment="center" verticalAlignment="bottom" title="-$1" id="wFT-XT-VOF">
+                                    <connections>
+                                        <action selector="minus1Pressed" destination="AgC-eL-Hgc" id="Q5k-HM-gGW"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="goalLabel" destination="5hl-gn-JBm" id="wn1-fY-F5A"/>
+                        <segue destination="unJ-hf-gK7" kind="relationship" relationship="nextPage" id="V9Z-74-pyC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="190" y="-71"/>
+        </scene>
+        <!--CurrentAmountController-->
+        <scene sceneID="XKa-V5-V0X">
+            <objects>
+                <controller identifier="CurrentAmountController" id="unJ-hf-gK7" customClass="CurrentAmountController" customModule="Daily_Goal_Tracker_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Current $$$" id="Rsz-zc-CeE"/>
+                        <label alignment="center" verticalAlignment="center" text="$0" id="weC-ZR-VjV">
+                            <fontDescription key="font" type="system" pointSize="30"/>
+                        </label>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="GFI-eu-sHO">
+                            <items>
+                                <button width="0.5" height="25" alignment="center" verticalAlignment="bottom" title="+$10" id="M1c-LR-Hg3">
+                                    <connections>
+                                        <action selector="plus10Pressed" destination="unJ-hf-gK7" id="8Uz-Vq-drD"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="25" alignment="center" verticalAlignment="bottom" title="-$10" id="SQz-Mj-rmt">
+                                    <connections>
+                                        <action selector="minus10Pressed" destination="unJ-hf-gK7" id="0MB-qb-G8X"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="XLa-51-2K2">
+                            <items>
+                                <button width="0.5" height="25" alignment="center" verticalAlignment="bottom" title="+$5" id="t7A-xR-7F1">
+                                    <connections>
+                                        <action selector="plus5Pressed" destination="unJ-hf-gK7" id="b6V-Ze-5BK"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="25" alignment="center" verticalAlignment="bottom" title="-$5" id="ML2-hE-55y">
+                                    <connections>
+                                        <action selector="minus5Pressed" destination="unJ-hf-gK7" id="B5A-6e-ufG"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="c5R-b0-PnP">
+                            <items>
+                                <button width="0.5" height="25" alignment="center" verticalAlignment="bottom" title="+$1" id="GmH-dg-iGX">
+                                    <connections>
+                                        <action selector="plus1Pressed" destination="unJ-hf-gK7" id="SV7-1Q-KBn"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="25" alignment="center" verticalAlignment="bottom" title="-$1" id="Prx-7y-uyx">
+                                    <connections>
+                                        <action selector="minus1Pressed" destination="unJ-hf-gK7" id="2Wp-6u-3Ow"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="currentAmountLabel" destination="weC-ZR-VjV" id="CQV-aJ-qhF"/>
+                        <outlet property="currentAmountUnitsLabel" destination="Rsz-zc-CeE" id="vUI-Lf-b4C"/>
+                        <segue destination="wBD-5O-xfh" kind="relationship" relationship="nextPage" id="jG3-ON-C3i"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="419" y="-71"/>
+        </scene>
+        <!--AmountLeftController-->
+        <scene sceneID="mAo-40-Zic">
+            <objects>
+                <controller identifier="AmountLeftController" id="wBD-5O-xfh" customClass="AmountLeftController" customModule="Daily_Goal_Tracker_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="$$$ Left" id="cHW-k3-XGS"/>
+                        <label alignment="center" verticalAlignment="center" text="$0" id="s78-Nb-wwK">
+                            <fontDescription key="font" type="system" pointSize="40"/>
+                        </label>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Reset" id="rx5-i8-pFx">
+                            <connections>
+                                <action selector="resetPressed" destination="wBD-5O-xfh" id="VLM-8C-Sqt"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="amountLeftLabel" destination="s78-Nb-wwK" id="YTc-ra-Poe"/>
+                        <outlet property="amountLeftUnitsLabel" destination="cHW-k3-XGS" id="NqE-kD-iVh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="653" y="-71"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Daily_Goal_Tracker_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Daily_Goal_Tracker_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+</document>
