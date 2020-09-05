@@ -88,6 +88,14 @@ class Goal
         amountLeft = goalAmount-currentAmount
     }
     
+    // Initializer for just units and format
+    init (format: Format, units: String)
+    {
+        self.format = format
+        self.units = units
+        amountLeft = goalAmount-currentAmount
+    }
+    
     // Update format to align with user requested change
     func updateFormat (_ newFormat: Format)
     {
@@ -116,6 +124,15 @@ class Goal
         }
         
         amountLeft = goalAmount-currentAmount
+    }
+    
+    // Update units
+    func updateUnits (_ newUnits: String?)
+    {
+        if let newUnitsUnwrapped = newUnits
+        {
+            units = newUnitsUnwrapped
+        }
     }
     
     // Reset to default amounts

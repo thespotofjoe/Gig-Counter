@@ -9,7 +9,8 @@
 import WatchKit
 import Foundation
 
-class CurrentAmountController: WKInterfaceController {
+class CurrentAmountController: WKInterfaceController
+{
 
     @IBOutlet weak var currentAmountUnitsLabel: WKInterfaceLabel!
     
@@ -25,11 +26,12 @@ class CurrentAmountController: WKInterfaceController {
         goal.updateCurrent(change)
         
         // Reload interfaces to update data throughout the app
-        WKInterfaceController.reloadRootPageControllers(withNames : ["SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [goal, goal, goal], orientation : WKPageOrientation.horizontal, pageIndex: 1)
+        WKInterfaceController.reloadRootPageControllers(withNames : ["UpdateGoalController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [nil, goal, goal, goal], orientation : WKPageOrientation.horizontal, pageIndex: 2)
     }
     
     /* Integral system functions, overridden */
-    override func awake(withContext context: Any?) {
+    override func awake(withContext context: Any?)
+    {
         super.awake(withContext: context)
         
         // Unpack the data passed from previous interface controller,
@@ -42,12 +44,14 @@ class CurrentAmountController: WKInterfaceController {
         currentAmountLabel.setText(self.goal.currentAmountString)
     }
     
-    override func willActivate() {
+    override func willActivate()
+    {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
     
-    override func didDeactivate() {
+    override func didDeactivate()
+    {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }

@@ -10,7 +10,8 @@
 import WatchKit
 import Foundation
 
-class AmountLeftController: WKInterfaceController {
+class AmountLeftController: WKInterfaceController
+{
 
     @IBOutlet weak var amountLeftUnitsLabel: WKInterfaceLabel!
     
@@ -19,7 +20,8 @@ class AmountLeftController: WKInterfaceController {
     var goal = Goal()
     
     /* Integral system functions, overridden */
-    override func awake(withContext context: Any?) {
+    override func awake(withContext context: Any?)
+    {
         super.awake(withContext: context)
         
         // Unpack the data passed from previous interface controller,
@@ -39,7 +41,8 @@ class AmountLeftController: WKInterfaceController {
         super.willActivate()
     }
     
-    override func didDeactivate() {
+    override func didDeactivate()
+    {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
@@ -55,7 +58,7 @@ class AmountLeftController: WKInterfaceController {
             self.goal.reset()
             
             // Reload interfaces to update data throughout the app
-            WKInterfaceController.reloadRootPageControllers(withNames : ["SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [self.goal, self.goal, self.goal], orientation : WKPageOrientation.horizontal, pageIndex: 2)
+            WKInterfaceController.reloadRootPageControllers(withNames : ["UpdateGoalController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [nil, self.goal, self.goal, self.goal], orientation : WKPageOrientation.horizontal, pageIndex: 3)
         })
         
         let cancelAction = WKAlertAction(title: "Cancel", style: .cancel, handler: {})

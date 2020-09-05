@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940F88E725040274005935E0 /* UpdateGoalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F88E625040274005935E0 /* UpdateGoalController.swift */; };
 		944D15CE2502F0E3004AF108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15CD2502F0E3004AF108 /* AppDelegate.swift */; };
 		944D15D02502F0E3004AF108 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15CF2502F0E3004AF108 /* SceneDelegate.swift */; };
 		944D15D22502F0E3004AF108 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15D12502F0E3004AF108 /* ViewController.swift */; };
@@ -17,7 +18,6 @@
 		944D15E52502F0E6004AF108 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944D15E32502F0E6004AF108 /* Interface.storyboard */; };
 		944D15E72502F0E7004AF108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944D15E62502F0E7004AF108 /* Assets.xcassets */; };
 		944D15EE2502F0E7004AF108 /* Daily Goal Tracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 944D15ED2502F0E7004AF108 /* Daily Goal Tracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		944D15F32502F0E7004AF108 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15F22502F0E7004AF108 /* InterfaceController.swift */; };
 		944D15F52502F0E7004AF108 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15F42502F0E7004AF108 /* ExtensionDelegate.swift */; };
 		944D15F72502F0E7004AF108 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15F62502F0E7004AF108 /* NotificationController.swift */; };
 		944D15F92502F0E7004AF108 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15F82502F0E7004AF108 /* ComplicationController.swift */; };
@@ -25,7 +25,8 @@
 		944D160C2502F188004AF108 /* SetGoalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D160B2502F188004AF108 /* SetGoalController.swift */; };
 		944D160E2502F19E004AF108 /* CurrentAmountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D160D2502F19E004AF108 /* CurrentAmountController.swift */; };
 		944D16102502F1B0004AF108 /* AmountLeftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D160F2502F1B0004AF108 /* AmountLeftController.swift */; };
-		944D16122502F1BA004AF108 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D16112502F1BA004AF108 /* Utils.swift */; };
+		94DF9880250405C900583E10 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF987F250405C900583E10 /* Utils.swift */; };
+		94DF9881250405C900583E10 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF987F250405C900583E10 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		940F88E625040274005935E0 /* UpdateGoalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateGoalController.swift; sourceTree = "<group>"; };
 		944D15CA2502F0E3004AF108 /* Daily Goal Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Goal Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		944D15CD2502F0E3004AF108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		944D15CF2502F0E3004AF108 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +86,6 @@
 		944D15E62502F0E7004AF108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		944D15E82502F0E7004AF108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		944D15ED2502F0E7004AF108 /* Daily Goal Tracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Daily Goal Tracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		944D15F22502F0E7004AF108 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		944D15F42502F0E7004AF108 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		944D15F62502F0E7004AF108 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		944D15F82502F0E7004AF108 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -94,7 +95,7 @@
 		944D160B2502F188004AF108 /* SetGoalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalController.swift; sourceTree = "<group>"; };
 		944D160D2502F19E004AF108 /* CurrentAmountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAmountController.swift; sourceTree = "<group>"; };
 		944D160F2502F1B0004AF108 /* AmountLeftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountLeftController.swift; sourceTree = "<group>"; };
-		944D16112502F1BA004AF108 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		94DF987F250405C900583E10 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,17 +163,17 @@
 		944D15F12502F0E7004AF108 /* Daily Goal Tracker WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				944D15F22502F0E7004AF108 /* InterfaceController.swift */,
 				944D15F42502F0E7004AF108 /* ExtensionDelegate.swift */,
 				944D15F62502F0E7004AF108 /* NotificationController.swift */,
 				944D15F82502F0E7004AF108 /* ComplicationController.swift */,
 				944D15FA2502F0E9004AF108 /* Assets.xcassets */,
 				944D15FC2502F0E9004AF108 /* Info.plist */,
 				944D15FD2502F0E9004AF108 /* PushNotificationPayload.apns */,
+				940F88E625040274005935E0 /* UpdateGoalController.swift */,
 				944D160B2502F188004AF108 /* SetGoalController.swift */,
 				944D160D2502F19E004AF108 /* CurrentAmountController.swift */,
 				944D160F2502F1B0004AF108 /* AmountLeftController.swift */,
-				944D16112502F1BA004AF108 /* Utils.swift */,
+				94DF987F250405C900583E10 /* Utils.swift */,
 			);
 			path = "Daily Goal Tracker WatchKit Extension";
 			sourceTree = "<group>";
@@ -312,6 +313,7 @@
 				944D15D22502F0E3004AF108 /* ViewController.swift in Sources */,
 				944D15CE2502F0E3004AF108 /* AppDelegate.swift in Sources */,
 				944D15D02502F0E3004AF108 /* SceneDelegate.swift in Sources */,
+				94DF9880250405C900583E10 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,12 +323,12 @@
 			files = (
 				944D15F72502F0E7004AF108 /* NotificationController.swift in Sources */,
 				944D16102502F1B0004AF108 /* AmountLeftController.swift in Sources */,
+				94DF9881250405C900583E10 /* Utils.swift in Sources */,
 				944D160E2502F19E004AF108 /* CurrentAmountController.swift in Sources */,
 				944D15F92502F0E7004AF108 /* ComplicationController.swift in Sources */,
 				944D15F52502F0E7004AF108 /* ExtensionDelegate.swift in Sources */,
 				944D160C2502F188004AF108 /* SetGoalController.swift in Sources */,
-				944D15F32502F0E7004AF108 /* InterfaceController.swift in Sources */,
-				944D16122502F1BA004AF108 /* Utils.swift in Sources */,
+				940F88E725040274005935E0 /* UpdateGoalController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

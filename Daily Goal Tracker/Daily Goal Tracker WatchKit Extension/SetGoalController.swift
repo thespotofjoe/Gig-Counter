@@ -9,7 +9,8 @@
 import WatchKit
 import Foundation
 
-class SetGoalController: WKInterfaceController {
+class SetGoalController: WKInterfaceController
+{
 
     @IBOutlet weak var goalLabel: WKInterfaceLabel!
     
@@ -23,7 +24,7 @@ class SetGoalController: WKInterfaceController {
         goal.updateGoal(change)
         
         // Reload interfaces to update data throughout the app
-        WKInterfaceController.reloadRootPageControllers(withNames : ["SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [goal, goal, goal], orientation : WKPageOrientation.horizontal, pageIndex: 0)
+        WKInterfaceController.reloadRootPageControllers(withNames : ["UpdateGoalController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [nil, goal, goal, goal], orientation : WKPageOrientation.horizontal, pageIndex: 1)
     }
     
     /* Integral system functions, overridden */

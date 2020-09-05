@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cjd-q4-7Kg">
     <device id="watch38"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -149,6 +149,25 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="653" y="-71"/>
+        </scene>
+        <!--UpdateDataController-->
+        <scene sceneID="okt-8a-vwP">
+            <objects>
+                <controller identifier="UpdateDataController" id="Cjd-q4-7Kg" customClass="UpdateDataController" customModule="Daily_Goal_Tracker_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Update Data from Phone" id="JeA-5K-5i3">
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                            <connections>
+                                <action selector="updateData" destination="Cjd-q4-7Kg" id="oMS-rt-Qkr"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <segue destination="AgC-eL-Hgc" kind="relationship" relationship="nextPage" id="eaB-Th-VUV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-37" y="-71"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
