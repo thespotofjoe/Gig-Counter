@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cjd-q4-7Kg">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.3" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cjd-q4-7Kg">
     <device id="watch38"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -60,6 +60,12 @@
                     </items>
                     <connections>
                         <outlet property="goalLabel" destination="5hl-gn-JBm" id="wn1-fY-F5A"/>
+                        <outlet property="minus10Button" destination="8N8-1T-95m" id="Yel-wz-tFE"/>
+                        <outlet property="minus1Button" destination="wFT-XT-VOF" id="tjW-Fn-VlR"/>
+                        <outlet property="minus5Button" destination="15M-89-Yhk" id="d6L-aB-Sq0"/>
+                        <outlet property="plus10Button" destination="eW1-8v-cX6" id="Y7o-7w-q29"/>
+                        <outlet property="plus1Button" destination="aqm-y4-DNX" id="oRX-hp-cQK"/>
+                        <outlet property="plus5Button" destination="CCr-iX-kdi" id="W3y-Al-qxO"/>
                         <segue destination="unJ-hf-gK7" kind="relationship" relationship="nextPage" id="V9Z-74-pyC"/>
                     </connections>
                 </controller>
@@ -121,6 +127,12 @@
                     <connections>
                         <outlet property="currentAmountLabel" destination="weC-ZR-VjV" id="CQV-aJ-qhF"/>
                         <outlet property="currentAmountUnitsLabel" destination="Rsz-zc-CeE" id="vUI-Lf-b4C"/>
+                        <outlet property="minus10Button" destination="SQz-Mj-rmt" id="tOM-sr-JSX"/>
+                        <outlet property="minus1Button" destination="Prx-7y-uyx" id="leb-RP-o3n"/>
+                        <outlet property="minus5Button" destination="ML2-hE-55y" id="Wzj-vQ-Ejd"/>
+                        <outlet property="plus10Button" destination="M1c-LR-Hg3" id="6Xn-KA-bBB"/>
+                        <outlet property="plus1Button" destination="GmH-dg-iGX" id="p3L-Uc-gDx"/>
+                        <outlet property="plus5Button" destination="t7A-xR-7F1" id="swz-kn-BP6"/>
                         <segue destination="wBD-5O-xfh" kind="relationship" relationship="nextPage" id="jG3-ON-C3i"/>
                     </connections>
                 </controller>

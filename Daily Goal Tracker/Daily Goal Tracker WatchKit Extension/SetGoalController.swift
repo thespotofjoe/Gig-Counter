@@ -12,7 +12,21 @@ import Foundation
 class SetGoalController: WKInterfaceController
 {
 
+    // Label outlet
     @IBOutlet weak var goalLabel: WKInterfaceLabel!
+    
+    // Button outlets
+    @IBOutlet weak var plus10Button: WKInterfaceButton!
+    
+    @IBOutlet weak var minus10Button: WKInterfaceButton!
+    
+    @IBOutlet weak var plus5Button: WKInterfaceButton!
+    
+    @IBOutlet weak var minus5Button: WKInterfaceButton!
+    
+    @IBOutlet weak var plus1Button: WKInterfaceButton!
+    
+    @IBOutlet weak var minus1Button: WKInterfaceButton!
     
     var goal = Goal()
     
@@ -41,6 +55,22 @@ class SetGoalController: WKInterfaceController
             // Update the label to reflect the data
             goalLabel.setText(self.goal.goalAmountString)
             print("Setting text to \"\(self.goal.goalAmountString)\".")
+            if goal.format == .dollars
+            {
+                plus10Button.setTitle("+$10")
+                minus10Button.setTitle("-$10")
+                plus5Button.setTitle("+$5")
+                minus5Button.setTitle("-$5")
+                plus1Button.setTitle("+$1")
+                minus1Button.setTitle("-$1")
+            } else {
+                plus10Button.setTitle("+10")
+                minus10Button.setTitle("-10")
+                plus5Button.setTitle("+5")
+                minus5Button.setTitle("-5")
+                plus1Button.setTitle("+1")
+                minus1Button.setTitle("-1")
+            }
         }
     }
     

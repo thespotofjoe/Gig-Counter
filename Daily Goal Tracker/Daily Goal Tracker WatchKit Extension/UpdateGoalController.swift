@@ -43,4 +43,16 @@ class UpdateDataController: WKInterfaceController
         print("Outside Closure: New Format: \(self.goal.format)")
         
     }
+
+    override func awake(withContext context: Any?)
+    {
+        super.awake(withContext: context)
+        
+        // Unpack the data passed from previous interface controller,
+        // but if this is the beginning of the program, do nothing.
+        if let dataAsAny = context
+        {
+            self.goal = dataAsAny as! Goal
+        }
+    }
 }

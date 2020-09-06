@@ -11,10 +11,23 @@ import Foundation
 
 class CurrentAmountController: WKInterfaceController
 {
-
+    // Label outlets
     @IBOutlet weak var currentAmountUnitsLabel: WKInterfaceLabel!
     
     @IBOutlet weak var currentAmountLabel: WKInterfaceLabel!
+    
+    // Button outlets
+    @IBOutlet weak var plus10Button: WKInterfaceButton!
+    
+    @IBOutlet weak var minus10Button: WKInterfaceButton!
+    
+    @IBOutlet weak var plus5Button: WKInterfaceButton!
+    
+    @IBOutlet weak var minus5Button: WKInterfaceButton!
+    
+    @IBOutlet weak var plus1Button: WKInterfaceButton!
+    
+    @IBOutlet weak var minus1Button: WKInterfaceButton!
     
     var goal = Goal()
     
@@ -45,8 +58,20 @@ class CurrentAmountController: WKInterfaceController
         if goal.format == .dollars
         {
             currentAmountUnitsLabel.setText("Current $$$:")
+            plus10Button.setTitle("+$10")
+            minus10Button.setTitle("-$10")
+            plus5Button.setTitle("+$5")
+            minus5Button.setTitle("-$5")
+            plus1Button.setTitle("+$1")
+            minus1Button.setTitle("-$1")
         } else {
             currentAmountUnitsLabel.setText("Current \(goal.units.lowercased()):")
+            plus10Button.setTitle("+10")
+            minus10Button.setTitle("-10")
+            plus5Button.setTitle("+5")
+            minus5Button.setTitle("-5")
+            plus1Button.setTitle("+1")
+            minus1Button.setTitle("-1")
         }
     }
     

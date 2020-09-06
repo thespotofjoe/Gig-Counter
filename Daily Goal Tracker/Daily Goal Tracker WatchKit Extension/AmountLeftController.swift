@@ -32,7 +32,12 @@ class AmountLeftController: WKInterfaceController
         }
         
         // Update the label to reflect the data
-        amountLeftLabel.setText(self.goal.amountLeftString)
+        if goal.amountLeft <= 0
+        {
+            amountLeftLabel.setText("Goal met!")
+        } else {
+            amountLeftLabel.setText(self.goal.amountLeftString)
+        }
         
         if goal.format == .dollars
         {
