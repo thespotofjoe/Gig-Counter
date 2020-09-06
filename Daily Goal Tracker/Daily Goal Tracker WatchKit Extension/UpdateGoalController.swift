@@ -20,13 +20,27 @@ class UpdateDataController: WKInterfaceController
         {
             let session = WCSession.default
             
+            print("Trying to unpack goal reply on Watch.")
             session.sendMessage(["":0],
                                 replyHandler: {response in
-                self.goal = response["goal"] as! Goal},
-                                errorHandler: {error in})
+                                    self.goal.updateUnits(response["units"] as! String)
+                                    self.goal.updateFormat(Format(withIndex: response["format"] as! Int)!)
+                                    print("Inside Closure: New Units: \(self.goal.units)")
+                                    print("Inside Closure: New Format: \(self.goal.format)")
+                                    
+
+                                    // Reload interfaces to update data throughout the app
+                                    WKInterfaceController.reloadRootPageControllers(withNames : ["UpdateDataController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [self.goal, self.goal, self.goal, self.goal], orientation : WKPageOrientation.horizontal, pageIndex: 0)
+                                    
+            },
+                                errorHandler: {error in
+                                    print("Error unpacking goal reply from phone: \(error)")
+            })
         }
         
-        // Reload interfaces to update data throughout the app
-        WKInterfaceController.reloadRootPageControllers(withNames : ["UpdateGoalController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [nil, goal, goal, goal], orientation : WKPageOrientation.horizontal, pageIndex: 0)
+        print("Successfully unpacked goal reply on Watch.")
+        print("Outside Closure: New Units: \(self.goal.units)")
+        print("Outside Closure: New Format: \(self.goal.format)")
+        
     }
 }

@@ -61,10 +61,14 @@ extension ViewController: WCSessionDelegate, UIPickerViewDelegate, UIPickerViewD
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Swift.Void)
     {
         goal.updateUnits(unitsField.text)
-        let returnMessage: [String : Any] = ["goal" : goal]
+        
+        print("Received request from Watch. Trying to send dictionary back to Watch.")
+        let returnMessage: [String : Any] = ["units" : goal.units as Any, "format" : goal.format.index()]
         
         // Send it over to the Apple Watch
         replyHandler(returnMessage)
+        
+        print("Successfully replied to Watch.")
     }
     
     // UIPickerViewDelegate functions

@@ -33,6 +33,13 @@ class AmountLeftController: WKInterfaceController
         
         // Update the label to reflect the data
         amountLeftLabel.setText(self.goal.amountLeftString)
+        
+        if goal.format == .dollars
+        {
+            amountLeftUnitsLabel.setText("$$$ Left:")
+        } else {
+            amountLeftUnitsLabel.setText("\(goal.units.capitalized) left:")
+        }
     }
     
     override func willActivate()
@@ -58,7 +65,7 @@ class AmountLeftController: WKInterfaceController
             self.goal.reset()
             
             // Reload interfaces to update data throughout the app
-            WKInterfaceController.reloadRootPageControllers(withNames : ["UpdateGoalController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [nil, self.goal, self.goal, self.goal], orientation : WKPageOrientation.horizontal, pageIndex: 3)
+            WKInterfaceController.reloadRootPageControllers(withNames : ["UpdateDataController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [self.goal, self.goal, self.goal, self.goal], orientation : WKPageOrientation.horizontal, pageIndex: 3)
         })
         
         let cancelAction = WKAlertAction(title: "Cancel", style: .cancel, handler: {})

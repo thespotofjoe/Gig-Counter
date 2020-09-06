@@ -8,12 +8,32 @@
 
 import Foundation
 
-enum Format
+enum Format: CaseIterable
 {
     case dollars
     case number_only
     case number_then_units
     case units_colon_number
+    
+    init?(withIndex index: Int) {
+      guard Format.allCases.indices ~= index else { return nil }
+      self = Format.allCases[index]
+    }
+    
+    func index() -> Int
+    {
+        switch self
+        {
+        case .dollars:
+            return 0
+        case .number_only:
+            return 1
+        case .number_then_units:
+            return 2
+        case .units_colon_number:
+            return 3
+        }
+    }
 }
 
 class Goal

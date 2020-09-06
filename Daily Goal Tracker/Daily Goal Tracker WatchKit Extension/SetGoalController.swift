@@ -24,7 +24,7 @@ class SetGoalController: WKInterfaceController
         goal.updateGoal(change)
         
         // Reload interfaces to update data throughout the app
-        WKInterfaceController.reloadRootPageControllers(withNames : ["UpdateGoalController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [nil, goal, goal, goal], orientation : WKPageOrientation.horizontal, pageIndex: 1)
+        WKInterfaceController.reloadRootPageControllers(withNames : ["UpdateDataController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [goal, goal, goal, goal], orientation : WKPageOrientation.horizontal, pageIndex: 1)
     }
     
     /* Integral system functions, overridden */
@@ -40,6 +40,7 @@ class SetGoalController: WKInterfaceController
             
             // Update the label to reflect the data
             goalLabel.setText(self.goal.goalAmountString)
+            print("Setting text to \"\(self.goal.goalAmountString)\".")
         }
     }
     

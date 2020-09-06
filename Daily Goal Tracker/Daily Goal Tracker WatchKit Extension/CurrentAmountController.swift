@@ -26,7 +26,7 @@ class CurrentAmountController: WKInterfaceController
         goal.updateCurrent(change)
         
         // Reload interfaces to update data throughout the app
-        WKInterfaceController.reloadRootPageControllers(withNames : ["UpdateGoalController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [nil, goal, goal, goal], orientation : WKPageOrientation.horizontal, pageIndex: 2)
+        WKInterfaceController.reloadRootPageControllers(withNames: ["UpdateDataController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [goal, goal, goal, goal], orientation : WKPageOrientation.horizontal, pageIndex: 2)
     }
     
     /* Integral system functions, overridden */
@@ -41,7 +41,13 @@ class CurrentAmountController: WKInterfaceController
             self.goal = dataAsAny as! Goal
         }
         
-        currentAmountLabel.setText(self.goal.currentAmountString)
+        currentAmountLabel.setText(goal.currentAmountString)
+        if goal.format == .dollars
+        {
+            currentAmountUnitsLabel.setText("Current $$$:")
+        } else {
+            currentAmountUnitsLabel.setText("Current \(goal.units.lowercased()):")
+        }
     }
     
     override func willActivate()
