@@ -15,40 +15,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Units?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quD-r5-Rsn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Units?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quD-r5-Rsn">
                                 <rect key="frame" x="0.0" y="94" width="414" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dollars? Calls? Conversations?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrg-zz-tXp">
-                                <rect key="frame" x="91" y="135" width="232" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dollars? Calls? Conversations?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrg-zz-tXp">
+                                <rect key="frame" x="60" y="135" width="294" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnx-ll-4gP">
-                                <rect key="frame" x="0.0" y="177" width="414" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnx-ll-4gP">
+                                <rect key="frame" x="0.0" y="179" width="414" height="30"/>
                                 <state key="normal" title="Update Watch"/>
                                 <connections>
                                     <action selector="updateWatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYH-US-z7k"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Format?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHS-wy-6Bn">
-                                <rect key="frame" x="0.0" y="241" width="414" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Format?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHS-wy-6Bn">
+                                <rect key="frame" x="0.0" y="259" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1S-JY-3Sr">
-                                <rect key="frame" x="0.0" y="258" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1S-JY-3Sr">
+                                <rect key="frame" x="0.0" y="295" width="414" height="140"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="quD-r5-Rsn" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="50" id="76U-6R-Pml"/>
+                            <constraint firstItem="quD-r5-Rsn" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="7hu-cw-AVP"/>
+                            <constraint firstItem="a1S-JY-3Sr" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="FdO-bk-sYE"/>
+                            <constraint firstItem="NHS-wy-6Bn" firstAttribute="trailing" secondItem="Uee-0j-aNJ" secondAttribute="trailing" id="HOQ-lv-hXr"/>
+                            <constraint firstItem="cnx-ll-4gP" firstAttribute="trailing" secondItem="Uee-0j-aNJ" secondAttribute="trailing" id="Hsa-TU-7Zz"/>
+                            <constraint firstItem="a1S-JY-3Sr" firstAttribute="top" secondItem="NHS-wy-6Bn" secondAttribute="bottom" constant="15" id="IYd-Mj-Nv6"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="hrg-zz-tXp" secondAttribute="trailing" constant="60" id="QLE-4Q-uhb"/>
+                            <constraint firstItem="hrg-zz-tXp" firstAttribute="top" secondItem="quD-r5-Rsn" secondAttribute="bottom" constant="20" id="SOR-Lk-7jX"/>
+                            <constraint firstItem="cnx-ll-4gP" firstAttribute="top" secondItem="hrg-zz-tXp" secondAttribute="bottom" constant="10" id="UKY-a2-1bG"/>
+                            <constraint firstItem="a1S-JY-3Sr" firstAttribute="top" secondItem="NHS-wy-6Bn" secondAttribute="bottom" constant="15" id="cfn-Xs-EaN"/>
+                            <constraint firstItem="NHS-wy-6Bn" firstAttribute="top" secondItem="cnx-ll-4gP" secondAttribute="bottom" constant="50" id="chY-6M-vkY"/>
+                            <constraint firstItem="a1S-JY-3Sr" firstAttribute="trailing" secondItem="Uee-0j-aNJ" secondAttribute="trailing" id="g0K-4X-krW"/>
+                            <constraint firstItem="NHS-wy-6Bn" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="gsE-EH-L45"/>
+                            <constraint firstItem="cnx-ll-4gP" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="gsz-4T-6oG"/>
+                            <constraint firstItem="quD-r5-Rsn" firstAttribute="trailing" secondItem="Uee-0j-aNJ" secondAttribute="trailing" id="kpR-ua-DJp"/>
+                            <constraint firstItem="hrg-zz-tXp" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="60" id="vlt-LT-52G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
                     <connections>

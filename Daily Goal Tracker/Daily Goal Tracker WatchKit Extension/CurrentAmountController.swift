@@ -38,8 +38,15 @@ class CurrentAmountController: WKInterfaceController
         // Make the change
         goal.updateCurrent(change)
         
-        // Reload interfaces to update data throughout the app
-        WKInterfaceController.reloadRootPageControllers(withNames: ["UpdateDataController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts : [goal, goal, goal, goal], orientation : WKPageOrientation.horizontal, pageIndex: 2)
+        // If the user has made or beat their goal, cue the fireworks!
+        if goal.amountLeft <= 0
+        {
+            WKInterfaceController.reloadRootPageControllers(withNames: ["CongratulationsController"], contexts: [goal], orientation: WKPageOrientation.horizontal, pageIndex: 0)
+            return
+        }
+        
+        // Otherwise reload all the interfaces to update data throughout the app
+        WKInterfaceController.reloadRootPageControllers(withNames: ["UpdateDataController", "SetGoalController", "CurrentAmountController", "AmountLeftController"], contexts: [goal, goal, goal, goal], orientation: WKPageOrientation.horizontal, pageIndex: 2)
     }
     
     /* Integral system functions, overridden */

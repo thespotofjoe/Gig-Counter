@@ -72,6 +72,25 @@
             </objects>
             <point key="canvasLocation" x="190" y="-71"/>
         </scene>
+        <!--CongratulationsController-->
+        <scene sceneID="g22-83-PVT">
+            <objects>
+                <controller identifier="CongratulationsController" hidesWhenLoading="NO" id="Cdh-F0-hLZ" customClass="CongratulationsController" customModule="Daily_Goal_Tracker_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <spriteKitScene alignment="left" semanticContentAttribute="playback" scene="FireworkScene.sks" id="9bB-KQ-V74"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Done" id="kk1-2r-RJn">
+                            <connections>
+                                <action selector="goBack" destination="Cdh-F0-hLZ" id="6a9-t2-OcC"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="congratulationsScene" destination="9bB-KQ-V74" id="Mjs-py-aK5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="305" y="-385"/>
+        </scene>
         <!--CurrentAmountController-->
         <scene sceneID="XKa-V5-V0X">
             <objects>
