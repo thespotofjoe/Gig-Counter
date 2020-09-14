@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		940F88E725040274005935E0 /* UpdateGoalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F88E625040274005935E0 /* UpdateGoalController.swift */; };
+		944507BA250AA8C60027E907 /* CongratulationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944507B9250AA8C60027E907 /* CongratulationsController.swift */; };
+		944507C2250BD68F0027E907 /* FireworkEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = 944507C1250BD68F0027E907 /* FireworkEmitter.sks */; };
+		944507C6250BD8BC0027E907 /* FireworkScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 944507C5250BD8BC0027E907 /* FireworkScene.sks */; };
+		944D15CE2502F0E3004AF108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15CD2502F0E3004AF108 /* AppDelegate.swift */; };
+		944D15D02502F0E3004AF108 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15CF2502F0E3004AF108 /* SceneDelegate.swift */; };
+		944D15D22502F0E3004AF108 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15D12502F0E3004AF108 /* ViewController.swift */; };
+		944D15D52502F0E3004AF108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944D15D32502F0E3004AF108 /* Main.storyboard */; };
+		944D15D72502F0E6004AF108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944D15D62502F0E6004AF108 /* Assets.xcassets */; };
+		944D15DA2502F0E6004AF108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944D15D82502F0E6004AF108 /* LaunchScreen.storyboard */; };
+		944D15DF2502F0E6004AF108 /* Cash Flow Tracker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 944D15DE2502F0E6004AF108 /* Cash Flow Tracker WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		944D15E52502F0E6004AF108 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944D15E32502F0E6004AF108 /* Interface.storyboard */; };
+		944D15E72502F0E7004AF108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944D15E62502F0E7004AF108 /* Assets.xcassets */; };
+		944D15EE2502F0E7004AF108 /* Cash-Flow-Tracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 944D15ED2502F0E7004AF108 /* Cash-Flow-Tracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		944D15F52502F0E7004AF108 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15F42502F0E7004AF108 /* ExtensionDelegate.swift */; };
+		944D15F72502F0E7004AF108 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15F62502F0E7004AF108 /* NotificationController.swift */; };
+		944D15F92502F0E7004AF108 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D15F82502F0E7004AF108 /* ComplicationController.swift */; };
+		944D15FB2502F0E9004AF108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944D15FA2502F0E9004AF108 /* Assets.xcassets */; };
+		944D160C2502F188004AF108 /* SetGoalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D160B2502F188004AF108 /* SetGoalController.swift */; };
+		944D160E2502F19E004AF108 /* CurrentAmountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D160D2502F19E004AF108 /* CurrentAmountController.swift */; };
+		944D16102502F1B0004AF108 /* AmountLeftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D160F2502F1B0004AF108 /* AmountLeftController.swift */; };
+		94DF9880250405C900583E10 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF987F250405C900583E10 /* Utils.swift */; };
+		94DF9881250405C900583E10 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF987F250405C900583E10 /* Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		944D15E02502F0E6004AF108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 944D15C22502F0E3004AF108 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 944D15DD2502F0E6004AF108;
+			remoteInfo = "Daily Goal Tracker WatchKit App";
+		};
+		944D15EF2502F0E7004AF108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 944D15C22502F0E3004AF108 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 944D15EC2502F0E7004AF108;
+			remoteInfo = "Daily Goal Tracker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		944D16032502F0E9004AF108 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				944D15EE2502F0E7004AF108 /* Cash-Flow-Tracker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		944D16072502F0E9004AF108 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				944D15DF2502F0E6004AF108 /* Cash Flow Tracker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		940F88E625040274005935E0 /* UpdateGoalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateGoalController.swift; sourceTree = "<group>"; };
+		944507B9250AA8C60027E907 /* CongratulationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsController.swift; sourceTree = "<group>"; };
+		944507C1250BD68F0027E907 /* FireworkEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireworkEmitter.sks; sourceTree = "<group>"; };
+		944507C5250BD8BC0027E907 /* FireworkScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireworkScene.sks; sourceTree = "<group>"; };
+		944D15CA2502F0E3004AF108 /* Cash Flow Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cash Flow Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		944D15CD2502F0E3004AF108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		944D15CF2502F0E3004AF108 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		944D15D12502F0E3004AF108 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		944D15D42502F0E3004AF108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		944D15D62502F0E6004AF108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		944D15D92502F0E6004AF108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		944D15DB2502F0E6004AF108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		944D15DE2502F0E6004AF108 /* Cash Flow Tracker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cash Flow Tracker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		944D15E42502F0E6004AF108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		944D15E62502F0E7004AF108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		944D15E82502F0E7004AF108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		944D15ED2502F0E7004AF108 /* Cash-Flow-Tracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cash-Flow-Tracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		944D15F42502F0E7004AF108 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		944D15F62502F0E7004AF108 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		944D15F82502F0E7004AF108 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		944D15FA2502F0E9004AF108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		944D15FC2502F0E9004AF108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		944D15FD2502F0E9004AF108 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		944D160B2502F188004AF108 /* SetGoalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalController.swift; sourceTree = "<group>"; };
+		944D160D2502F19E004AF108 /* CurrentAmountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAmountController.swift; sourceTree = "<group>"; };
+		944D160F2502F1B0004AF108 /* AmountLeftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountLeftController.swift; sourceTree = "<group>"; };
+		94DF987F250405C900583E10 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		944D15C72502F0E3004AF108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		944D15EA2502F0E7004AF108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		944D15C12502F0E3004AF108 = {
+			isa = PBXGroup;
+			children = (
+				944D15CC2502F0E3004AF108 /* Cash Flow Tracker */,
+				944D15E22502F0E6004AF108 /* Cash Flow Tracker WatchKit App */,
+				944D15F12502F0E7004AF108 /* Cash Flow Tracker WatchKit Extension */,
+				944D15CB2502F0E3004AF108 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		944D15CB2502F0E3004AF108 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				944D15CA2502F0E3004AF108 /* Cash Flow Tracker.app */,
+				944D15DE2502F0E6004AF108 /* Cash Flow Tracker WatchKit App.app */,
+				944D15ED2502F0E7004AF108 /* Cash-Flow-Tracker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		944D15CC2502F0E3004AF108 /* Cash Flow Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				944D15CD2502F0E3004AF108 /* AppDelegate.swift */,
+				944D15CF2502F0E3004AF108 /* SceneDelegate.swift */,
+				944D15D12502F0E3004AF108 /* ViewController.swift */,
+				944D15D32502F0E3004AF108 /* Main.storyboard */,
+				944D15D62502F0E6004AF108 /* Assets.xcassets */,
+				944D15D82502F0E6004AF108 /* LaunchScreen.storyboard */,
+				944D15DB2502F0E6004AF108 /* Info.plist */,
+			);
+			path = "Cash Flow Tracker";
+			sourceTree = "<group>";
+		};
+		944D15E22502F0E6004AF108 /* Cash Flow Tracker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				944D15E32502F0E6004AF108 /* Interface.storyboard */,
+				944D15E62502F0E7004AF108 /* Assets.xcassets */,
+				944D15E82502F0E7004AF108 /* Info.plist */,
+			);
+			path = "Cash Flow Tracker WatchKit App";
+			sourceTree = "<group>";
+		};
+		944D15F12502F0E7004AF108 /* Cash Flow Tracker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				944D15F42502F0E7004AF108 /* ExtensionDelegate.swift */,
+				944D15F62502F0E7004AF108 /* NotificationController.swift */,
+				944D15F82502F0E7004AF108 /* ComplicationController.swift */,
+				944D15FA2502F0E9004AF108 /* Assets.xcassets */,
+				944D15FC2502F0E9004AF108 /* Info.plist */,
+				944D15FD2502F0E9004AF108 /* PushNotificationPayload.apns */,
+				940F88E625040274005935E0 /* UpdateGoalController.swift */,
+				944D160B2502F188004AF108 /* SetGoalController.swift */,
+				944D160D2502F19E004AF108 /* CurrentAmountController.swift */,
+				944D160F2502F1B0004AF108 /* AmountLeftController.swift */,
+				94DF987F250405C900583E10 /* Utils.swift */,
+				944507B9250AA8C60027E907 /* CongratulationsController.swift */,
+				944507C5250BD8BC0027E907 /* FireworkScene.sks */,
+				944507C1250BD68F0027E907 /* FireworkEmitter.sks */,
+			);
+			path = "Cash Flow Tracker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		944D15C92502F0E3004AF108 /* Daily Goal Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 944D16082502F0E9004AF108 /* Build configuration list for PBXNativeTarget "Daily Goal Tracker" */;
+			buildPhases = (
+				944D15C62502F0E3004AF108 /* Sources */,
+				944D15C72502F0E3004AF108 /* Frameworks */,
+				944D15C82502F0E3004AF108 /* Resources */,
+				944D16072502F0E9004AF108 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				944D15E12502F0E6004AF108 /* PBXTargetDependency */,
+			);
+			name = "Daily Goal Tracker";
+			productName = "Daily Goal Tracker";
+			productReference = 944D15CA2502F0E3004AF108 /* Cash Flow Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		944D15DD2502F0E6004AF108 /* Daily Goal Tracker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 944D16042502F0E9004AF108 /* Build configuration list for PBXNativeTarget "Daily Goal Tracker WatchKit App" */;
+			buildPhases = (
+				944D15DC2502F0E6004AF108 /* Resources */,
+				944D16032502F0E9004AF108 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				944D15F02502F0E7004AF108 /* PBXTargetDependency */,
+			);
+			name = "Daily Goal Tracker WatchKit App";
+			productName = "Daily Goal Tracker WatchKit App";
+			productReference = 944D15DE2502F0E6004AF108 /* Cash Flow Tracker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		944D15EC2502F0E7004AF108 /* Daily Goal Tracker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 944D16002502F0E9004AF108 /* Build configuration list for PBXNativeTarget "Daily Goal Tracker WatchKit Extension" */;
+			buildPhases = (
+				944D15E92502F0E7004AF108 /* Sources */,
+				944D15EA2502F0E7004AF108 /* Frameworks */,
+				944D15EB2502F0E7004AF108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Daily Goal Tracker WatchKit Extension";
+			productName = "Daily Goal Tracker WatchKit Extension";
+			productReference = 944D15ED2502F0E7004AF108 /* Cash-Flow-Tracker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		944D15C22502F0E3004AF108 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Joe's Studio";
+				TargetAttributes = {
+					944D15C92502F0E3004AF108 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					944D15DD2502F0E6004AF108 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					944D15EC2502F0E7004AF108 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 944D15C52502F0E3004AF108 /* Build configuration list for PBXProject "Daily Goal Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 944D15C12502F0E3004AF108;
+			productRefGroup = 944D15CB2502F0E3004AF108 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				944D15C92502F0E3004AF108 /* Daily Goal Tracker */,
+				944D15DD2502F0E6004AF108 /* Daily Goal Tracker WatchKit App */,
+				944D15EC2502F0E7004AF108 /* Daily Goal Tracker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		944D15C82502F0E3004AF108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944D15DA2502F0E6004AF108 /* LaunchScreen.storyboard in Resources */,
+				944D15D72502F0E6004AF108 /* Assets.xcassets in Resources */,
+				944D15D52502F0E3004AF108 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		944D15DC2502F0E6004AF108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944D15E72502F0E7004AF108 /* Assets.xcassets in Resources */,
+				944D15E52502F0E6004AF108 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		944D15EB2502F0E7004AF108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944507C6250BD8BC0027E907 /* FireworkScene.sks in Resources */,
+				944D15FB2502F0E9004AF108 /* Assets.xcassets in Resources */,
+				944507C2250BD68F0027E907 /* FireworkEmitter.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		944D15C62502F0E3004AF108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944D15D22502F0E3004AF108 /* ViewController.swift in Sources */,
+				944D15CE2502F0E3004AF108 /* AppDelegate.swift in Sources */,
+				944D15D02502F0E3004AF108 /* SceneDelegate.swift in Sources */,
+				94DF9880250405C900583E10 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		944D15E92502F0E7004AF108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944D15F72502F0E7004AF108 /* NotificationController.swift in Sources */,
+				944507BA250AA8C60027E907 /* CongratulationsController.swift in Sources */,
+				944D16102502F1B0004AF108 /* AmountLeftController.swift in Sources */,
+				94DF9881250405C900583E10 /* Utils.swift in Sources */,
+				944D160E2502F19E004AF108 /* CurrentAmountController.swift in Sources */,
+				944D15F92502F0E7004AF108 /* ComplicationController.swift in Sources */,
+				944D15F52502F0E7004AF108 /* ExtensionDelegate.swift in Sources */,
+				944D160C2502F188004AF108 /* SetGoalController.swift in Sources */,
+				940F88E725040274005935E0 /* UpdateGoalController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		944D15E12502F0E6004AF108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 944D15DD2502F0E6004AF108 /* Daily Goal Tracker WatchKit App */;
+			targetProxy = 944D15E02502F0E6004AF108 /* PBXContainerItemProxy */;
+		};
+		944D15F02502F0E7004AF108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 944D15EC2502F0E7004AF108 /* Daily Goal Tracker WatchKit Extension */;
+			targetProxy = 944D15EF2502F0E7004AF108 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		944D15D32502F0E3004AF108 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				944D15D42502F0E3004AF108 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		944D15D82502F0E6004AF108 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				944D15D92502F0E6004AF108 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		944D15E32502F0E6004AF108 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				944D15E42502F0E6004AF108 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		944D15FE2502F0E9004AF108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		944D15FF2502F0E9004AF108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		944D16012502F0E9004AF108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PNS76KB97;
+				INFOPLIST_FILE = "Daily Goal Tracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "joes.studio.Cash-Flow-Tracker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "Cash-Flow-Tracker WatchKit Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		944D16022502F0E9004AF108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PNS76KB97;
+				INFOPLIST_FILE = "Daily Goal Tracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "joes.studio.Cash-Flow-Tracker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "Cash-Flow-Tracker WatchKit Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		944D16052502F0E9004AF108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PNS76KB97;
+				IBSC_MODULE = Daily_Goal_Tracker_WatchKit_Extension;
+				INFOPLIST_FILE = "Daily Goal Tracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "joes.studio.Cash-Flow-Tracker.watchkitapp";
+				PRODUCT_NAME = "Cash Flow Tracker WatchKit App";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		944D16062502F0E9004AF108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PNS76KB97;
+				IBSC_MODULE = Daily_Goal_Tracker_WatchKit_Extension;
+				INFOPLIST_FILE = "Daily Goal Tracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "joes.studio.Cash-Flow-Tracker.watchkitapp";
+				PRODUCT_NAME = "Cash Flow Tracker WatchKit App";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		944D16092502F0E9004AF108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PNS76KB97;
+				INFOPLIST_FILE = "Daily Goal Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "joes.studio.Cash-Flow-Tracker";
+				PRODUCT_NAME = "Cash Flow Tracker";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		944D160A2502F0E9004AF108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PNS76KB97;
+				INFOPLIST_FILE = "Daily Goal Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "joes.studio.Cash-Flow-Tracker";
+				PRODUCT_NAME = "Cash Flow Tracker";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		944D15C52502F0E3004AF108 /* Build configuration list for PBXProject "Daily Goal Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944D15FE2502F0E9004AF108 /* Debug */,
+				944D15FF2502F0E9004AF108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		944D16002502F0E9004AF108 /* Build configuration list for PBXNativeTarget "Daily Goal Tracker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944D16012502F0E9004AF108 /* Debug */,
+				944D16022502F0E9004AF108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		944D16042502F0E9004AF108 /* Build configuration list for PBXNativeTarget "Daily Goal Tracker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944D16052502F0E9004AF108 /* Debug */,
+				944D16062502F0E9004AF108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		944D16082502F0E9004AF108 /* Build configuration list for PBXNativeTarget "Daily Goal Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944D16092502F0E9004AF108 /* Debug */,
+				944D160A2502F0E9004AF108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 944D15C22502F0E3004AF108 /* Project object */;
+}
